@@ -1,18 +1,18 @@
 {
-  "name": "bitcoin-cash-rpc",
+  "name": "bitcoin-sv-rpc",
   "version": "0.4.3",
-  "description": "JSON-RPC library for use with Bitcoin Cash Nodes, promise-based and async/await support.",
+  "description": "JSON-RPC library for use with Bitcoin SV Nodes, promise-based and async/await support.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paOol/Bitcoin-Cash-RPC.git"
+    "url": "git+https://github.com/nolanle/bitcoin-sv-rpc.git"
   },
   "keywords": [
     "bitcoin",
-    "cash",
+    "bitcoin sv",
     "async",
     "await",
     "es6",
@@ -23,9 +23,6 @@
     "json-rpc",
     "bitcoin",
     "node",
-    "bitcoin",
-    "abc",
-    "bitcoin",
     "unlimited",
     "bitcoin",
     "classic",
@@ -37,9 +34,9 @@
   "author": "paul",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paOol/Bitcoin-Cash-RPC/issues"
+    "url": "https://github.com/nolanle/bitcoin-sv-rpc/issues"
   },
-  "homepage": "https://github.com/paOol/Bitcoin-Cash-RPC#readme",
+  "homepage": "https://github.com/nolanle/bitcoin-sv-rpc#readme",
   "dependencies": {
     "axios": "^0.19.0"
   }
