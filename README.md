@@ -1,8 +1,8 @@
-# Bitcoin Cash JSON-RPC library
+# Bitcoin SV JSON-RPC library
 
-## Javascript Library to communicate with your Bitcoin Unlimited / Bitcoin ABC / Bitcoin Classic Node.
+## Javascript Library to communicate with your Bitcoin Unlimited / Bitcoin SV / Bitcoin Classic Node.
 
-![header](https://user-images.githubusercontent.com/5941389/30766133-0cb8e34e-9fa8-11e7-8c8b-3b7867ad42ba.jpg)
+![header](https://bitcoinsv.io/wp-content/uploads/2019/01/BSV_nav_bar_logo.png)
 
 This is a promise-based library and `async/await` compatible. Includes a couple
 additional helpers, such as a QRcode generator as well as Bitpay's Address
@@ -13,14 +13,14 @@ translator. Supports both address formats.
 grab from NPM
 
 ```
-  npm i bitcoin-cash-rpc
+  npm i bitcoin-sv-rpc
 ```
 
 ## Usage
 
 ```
-let bchRPC = require("bitcoin-cash-rpc");
-let bch = new bchRPC(host, username, password, port, timeout, debugging);
+let bsvRPC = require("bitcoin-sv-rpc");
+let bsv = new bsvRPC(host, username, password, port, timeout, debugging);
 
 // timeout is 3000 by default
 // debugging is true by default, false makes the library silent and requires try/catch on the app level.
@@ -29,7 +29,7 @@ let bch = new bchRPC(host, username, password, port, timeout, debugging);
 ```
 
 ```
- let info = await bch.getInfo();
+ let info = await bsv.getInfo();
 
  console.log(info)
 
@@ -50,7 +50,7 @@ let bch = new bchRPC(host, username, password, port, timeout, debugging);
  //  "paytxfee": 0.00000000,
  //  "relayfee": 0.00001000,
  //  "errors": "",
- //  "fork": "Bitcoin Cash"
+ //  "fork": "Bitcoin SV"
  //}
 
 ```
@@ -58,7 +58,7 @@ let bch = new bchRPC(host, username, password, port, timeout, debugging);
 or
 
 ```
- p = Promise.resolve(bch.getInfo());
+ p = Promise.resolve(bsv.getInfo());
  p.then(info=>{
     console.log(info);
  })
@@ -80,7 +80,7 @@ have a method added.
 
 You must be running a Node (Pruned mode is fine)
 
-[Bitcoin ABC](https://www.bitcoinabc.org/)
+[Bitcoin SV](https://bitcoinsv.io/)
 
 [Bitcoin XT ](https://bitcoinxt.software/)
 
