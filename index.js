@@ -55,7 +55,7 @@ class BitcoinSVRPC {
 			url: `http://${this.host}:${this.port}/`,
 			auth: { username: `${this.username}`, password: `${this.password}` },
 			headers: { 'Content-Type': 'text/plain' },
-			timeout: `${this.timeout}`,
+			timeout: this.timeout,
 			data: `${body}`
 		};
 		return req;
